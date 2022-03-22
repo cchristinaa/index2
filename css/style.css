@@ -1,67 +1,166 @@
 
 /* CSS Document */
 
-.responsive {
-  width: 100%;
-  max-width: 1600px;
-  height: auto;
+font-family: 'DejaVu Sans Mono', monospace;
+
+/* links */
+a:link {
+  color: rgb(0,206,209);
+
 }
-	
+a:visited {
+  color: rgb(147,112,219);
+  }
+a:hover {
+  background-color: LightSalmon;
+}
+
+
+/* body */
+
 body {
-
-margin-left: 100px;
-margin-right: 100px;
+margin-left: 11em;
+margin-right: 11em;
 }
 
-	p {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 15px;
-	font-style: normal;
-	text-align: left;
-	column-count: 1;
-	line-height: 20px;
-	letter-spacing: 0.6px;
-	margin-left: 100px;
-	color:  black;
-	margin-top: 10px;
-	margin-bottom: 25px;
-	width: 600px;
-}
+
+/* type waterfall */
+
 h1 {
-	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
-	font-size:30px;
-	font-style: bold;
-	line-height: 50px;
+	position: static;
+	font-family: 'Lato,sans-serif', uppercase;
+	font-size:5em;
+	line-height: 1.25em;
 	letter-spacing: 0px;
 	margin-left: 0px;
 	margin-bottom: 0px;
 	margin-top: 30px;
-	color: rgb(27.5,27.5,200);
+	line-height: 0.8em;
+	text-align: center;
+	color: #03c6fc;
 }
 h2 {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 24px;
-	font-weight: bolder;
-	line-height: 10px;
+	font-family: 'Garamond-serif';
+	font-size:3em;
+	line-height: 1.25em;
 	letter-spacing: 0px;
 	margin-left: 0px;
-	text-transform: uppercase;
-	color: rgb(200,27.5,27.5);
-	margin-top: 42px;
-	margin-bottom: 5px;
+	margin-bottom: 0.5em;
+	margin-top: 30px;
+	line-height: 0.8em;
+	text-align: center;
+	color: #000;
 }
-h3 {
+	p {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 15px;
-	font-weight: bold;
-	line-height: 11px;
-	letter-spacing: 0.8px;
-	margin-left: 0px;
-	text-transform: titlecase;
-	color: rgb(102,102,180);
-	margin-top: 20px;
-	margin-bottom: 8px;
+	font-size: 1em;
+	font-style: normal;
+	column-count: 1;
+	line-height: 20px;
+	letter-spacing: 0.6px;
+	margin-left: auto;
+	margin-right: auto;
+	color:  black;
+	margin-top: 10px;
+	margin-bottom: 25px;
 
 }
 
 
+/* all the div layers */
+
+div {
+	padding-top: 3em;
+  padding-bottom: 3em;
+
+}
+
+
+.container {
+
+width: 400px;
+margin: 0 auto;
+
+}
+
+
+.container2 {
+
+max-width: 600px;
+margin: 0 auto;
+
+
+}
+
+
+
+.container3 {
+
+width: 100px;
+margin: 0 auto;
+
+}
+
+
+
+/* custom elements, navigation, labels for buttons which are helpful for screen readers and the semantic markup of a page */
+
+.label {
+	border-style: dotted;
+	text-decoration: none;
+  color: black;
+  background-color: hotpink;
+  text-transform: uppercase;
+  padding: 8px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
+}
+.success {background-color: #04AA6D;} /* Green */
+.info {background-color: #2196F3;} /* Blue */
+.warning {background-color: #ff9800;} /* Orange */
+.danger {background-color: #f44336;} /* Red */
+.other {background-color: #e7e7e7; color: black;} /* Gray */
+
+
+/* this was how we made our images responsive */
+
+.responsive {
+  width: 100%;
+    height: auto;
+  max-width: 1600px;
+}
+
+
+/* this example has a max width of 50% */
+
+.responsive2 {
+  width: 100%;
+  max-width: 49%;
+}
+
+
+/* drawing shapes with CSS: https://css-tricks.com/the-shapes-of-css/ */
+
+ #heart {
+      position: fixed;
+      width: 100px;
+      height: 90px;
+      z-index: -1;
+    }
+    #heart:before,
+    #heart:after {
+      position: absolute;
+      content: "";
+      left: 50px;
+      top: 0;
+      width: 50px;
+      height: 80px;
+      background: red;
+      border-radius: 50px 50px 0 0;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+    }
+    #heart:after {
+      left: 0;
+      transform: rotate(45deg);
+      transform-origin: 100% 100%;
+    }
