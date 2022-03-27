@@ -23,6 +23,10 @@ margin-left: 11em;
 margin-right: 11em;
 }
 
+.responsive {
+  width: 100%;
+  height: auto;
+}
 
 /* type waterfall */
 
